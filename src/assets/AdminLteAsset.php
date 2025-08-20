@@ -21,11 +21,6 @@ class AdminLteAsset extends AssetBundle
         'js/adminlte.min.js'
     ];
 
-    public $jsOptions = [
-        'integrity' => 'sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=',
-        'crossorigin' => 'anonymous'
-    ];
-
     public $depends = [
         'juancho44\adminlte3\assets\PluginAsset',
     ];
