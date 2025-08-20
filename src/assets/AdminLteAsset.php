@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
  */
 class AdminLteAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/almasaeed2010/adminlte/dist';
+    public $sourcePath = '@bower/adminlte/dist';
 
     public $css = [
         'css/adminlte.min.css',

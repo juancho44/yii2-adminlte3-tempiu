@@ -10,9 +10,9 @@ use yii\web\AssetBundle;
  */
 class PluginAsset extends AssetBundle
 {
-    public $sourcePath = '@juancho44/adminlte3/dist';
+    public $sourcePath = '@bower/adminlte/dist';
 
     public $css = [
-        'css/styles.min.css',
+        'css/adminlte.min.css',
     ];
 }
