@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist potime/yii2-adminlte3 "^1.0"
+php composer.phar require --prefer-dist juancho44/yii2-adminlte3-tempiu "^1.0"
 ```
 
 or add
 
 ```
-"potime/yii2-adminlte3": "^1.0"
+"juancho44/yii2-adminlte3-tempiu": "^1.0"
 ```
 
 to the require section of your `composer.json` file.
@@ -31,7 +31,7 @@ Once the extension is installed, you can have a preview by reconfiguring the pat
     'view' => [
          'theme' => [
              'pathMap' => [
-                '@app/views' => '@vendor/potime/yii2-adminlte3/src/example/yii2-views'
+                '@app/views' => '@vendor/juancho44/yii2-adminlte3-tempiu/src/example/yii2-views'
              ],
          ],
     ],
@@ -81,7 +81,7 @@ if (!YII_ENV_TEST) {
             'crud' => [
                 'class' => 'yii\gii\generators\crud\Generator',
                 'templates' => [
-                    'adminlte3' => '@vendor/potime/yii2-adminlte3/src/gii/generators/crud/adminlte3'
+                    'adminlte3' => '@vendor/juancho44/yii2-adminlte3-tempiu/src/gii/generators/crud/adminlte3'
                 ]
             ]
         ]
