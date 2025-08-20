@@ -10,18 +10,13 @@ use yii\web\AssetBundle;
  */
 class AdminLteAsset extends AssetBundle
 {
-    public $baseUrl = 'https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist';
-
     public $css = [
-        'css/adminlte.min.css',
+        'https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css',
     ];
 
     public $js = [
         'https://code.jquery.com/jquery-3.6.0.min.js',
-        'js/adminlte.min.js'
-    ];
-
-    public $depends = [
-        'juancho44\adminlte3\assets\PluginAsset',
+        'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js',
+        'https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js'
     ];
 }
