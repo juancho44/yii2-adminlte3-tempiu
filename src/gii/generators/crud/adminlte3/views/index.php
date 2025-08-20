@@ -65,7 +65,7 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
 }
 ?>
 
-                ['class' => 'potime\adminlte3\grid\ActionColumn'],
+                ['class' => 'juancho44\adminlte3\grid\ActionColumn'],
             ],
             'summaryOptions' => ['class' => 'summary mb-2'],
             'pager' => [

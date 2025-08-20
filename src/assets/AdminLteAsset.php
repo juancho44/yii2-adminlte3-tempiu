@@ -1,12 +1,12 @@
 <?php
 
-namespace potime\adminlte3\assets;
+namespace juancho44\adminlte3\assets;
 
 use yii\web\AssetBundle;
 
 /**
  * Class AdminLteAsset
- * @package potime\adminlte3\assets
+ * @package juancho44\adminlte3\assets
  */
 class AdminLteAsset extends AssetBundle
 {
@@ -21,6 +21,6 @@ class AdminLteAsset extends AssetBundle
     ];
 
     public $depends = [
-        'potime\adminlte3\assets\PluginAsset',
+        'juancho44\adminlte3\assets\PluginAsset',
     ];
 }

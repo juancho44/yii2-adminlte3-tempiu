@@ -1,12 +1,12 @@
 <?php
 
-namespace potime\adminlte3\assets;
+namespace juancho44\adminlte3\assets;
 
 use yii\web\AssetBundle;
 
 /**
  * Class FontAwesomeAsset
- * @package potime\adminlte3\assets
+ * @package juancho44\adminlte3\assets
  */
 class FontAwesomeAsset extends AssetBundle
 {

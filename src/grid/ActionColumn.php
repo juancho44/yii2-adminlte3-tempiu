@@ -1,6 +1,6 @@
 <?php
 
-namespace potime\adminlte3\grid;
+namespace juancho44\adminlte3\grid;
 
 use Yii;
 use yii\helpers\Html;

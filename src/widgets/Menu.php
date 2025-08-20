@@ -1,6 +1,6 @@
 <?php
 
-namespace potime\adminlte3\widgets;
+namespace juancho44\adminlte3\widgets;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;

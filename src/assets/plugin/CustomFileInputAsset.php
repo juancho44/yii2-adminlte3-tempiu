@@ -1,18 +1,18 @@
 <?php
 
-namespace potime\adminlte3\assets\plugin;
+namespace juancho44\adminlte3\assets\plugin;
 
 use yii\web\AssetBundle;
 
 /**
  * Class CustomFileInputAsset
- * @package potime\adminlte3\assets\plugin
+ * @package juancho44\adminlte3\assets\plugin
  */
 class CustomFileInputAsset extends AssetBundle
 {
-    public $sourcePath = '@potime/adminlte3/dist';
+    public $sourcePath = '@vendor/fortawesome/font-awesome';
 
-    public $js = [
-        'js/bs-custom-file-input.min.js',
+    public $css = [
+        'css/all.min.css',
     ];
 }
