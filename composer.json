@@ -20,5 +20,7 @@
         "psr-4": {
             "juancho44\\adminlte3\\": "src"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
