@@ -2,7 +2,6 @@
 
 /* @var $directoryAsset string */
 
-use Yii;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use juancho44\adminlte3\widgets\Menu;
