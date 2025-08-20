@@ -358,7 +358,7 @@ Este proyecto está licenciado bajo la licencia BSD-4-Clause. Ver el archivo [LI
 
 ## 👨‍💻 Autor
 
-**Juancho44** - [juanclama@gmail.com](mailto:juanclama@gmail.com)
+**Juancho44**
 
 ## 🙏 Agradecimientos
 
