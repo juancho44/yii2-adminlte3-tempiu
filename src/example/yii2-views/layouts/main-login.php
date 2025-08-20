@@ -6,7 +6,6 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\View;
-use yii\bootstrap4\Breadcrumbs;
 use juancho44\adminlte3\assets\AdminLteAsset;
 use juancho44\adminlte3\assets\FontAwesomeAsset;
 use juancho44\adminlte3\widgets\Alert;

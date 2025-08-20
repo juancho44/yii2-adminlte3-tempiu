@@ -3,7 +3,7 @@
 namespace juancho44\adminlte3\widgets;
 
 use Yii;
-use yii\bootstrap4\Widget;
+use yii\base\Widget;
 use yii\helpers\Html;
 
 /**
@@ -93,15 +93,7 @@ class Toast extends Widget
             }
 
             foreach ((array)$flash as $message) {
-                echo \yii\bootstrap4\Toast::widget([
-                    'options' => [
-                        'data-delay' => $this->delay,
-                        'class' => 'shadow ' . $this->types[$type]['class'] ?? 'toast-info' . $appendClass,
-                    ],
-                    'clientOptions' => 'show',
-                    'title' => ($this->types[$type]['icon'] ?? '') . $this->title,
-                    'body' => $message,
-                ]);
+                echo Html::tag('div', $this->title, $options);
             }
             $session->removeFlash($type);
         }

@@ -3,7 +3,8 @@
 namespace juancho44\adminlte3\widgets;
 
 use Yii;
-use yii\bootstrap4\Widget;
+use yii\base\Widget;
+use yii\helpers\Html;
 
 /**
  * Alert widget renders a message from session flash for AdminLTE alerts. All flash messages are displayed
@@ -101,13 +102,8 @@ class Alert extends Widget
             if (isset($this->types[$key])) {
                 $data = (array)$data;
                 foreach ($data as $message) {
-                    echo \yii\bootstrap4\Alert::widget([
-                        'body' => ($this->types[$key]['icon'] ?? '') . $message,
-                        'closeButton' => $this->closeButton,
-                        'options' => [
-                            'id' => $this->getId() . '-' . $key,
-                            'class' => ($this->types[$key]['class'] ?? 'alert-info') . $addCssClass,
-                        ],
+                    echo Html::tag('div', ($this->types[$key]['icon'] ?? '') . $message, [
+                        'class' => ($this->types[$key]['class'] ?? 'alert-info') . $addCssClass,
                     ]);
                 }
             }

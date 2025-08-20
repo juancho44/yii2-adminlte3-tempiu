@@ -65,11 +65,11 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
 }
 ?>
 
-                ['class' => 'juancho44\adminlte3\grid\ActionColumn'],
+                ['class' => 'yii\grid\ActionColumn'],
             ],
             'summaryOptions' => ['class' => 'summary mb-2'],
             'pager' => [
-                'class' => 'yii\bootstrap4\LinkPager',
+                'class' => 'yii\widgets\LinkPager',
             ]
         ]); ?>
 <?php else: ?>
@@ -80,7 +80,7 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
                 return Html::a(Html::encode($model-><?= $nameAttribute ?>), ['view', <?= $urlParams ?>]);
             },
             'pager' => [
-                'class' => 'yii\bootstrap4\LinkPager',
+                'class' => 'yii\widgets\LinkPager',
                 'options' => ['class' => 'pagination mt-3'],
             ]
         ]) ?>
