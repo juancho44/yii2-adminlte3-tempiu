@@ -35,10 +35,15 @@ use yii\widgets\Breadcrumbs;
                     'options' => [
                         'class' => 'float-sm-right'
                     ],
-                    'itemTemplate' => '<li class="breadcrumb-item">{link}</li>',
-                    'activeItemTemplate' => '<li class="breadcrumb-item active">{link}</li>',
+                    'itemTemplate' => '<li class="breadcrumb-item"><a href="{url}">{label}</a></li>',
+                    'activeItemTemplate' => '<li class="breadcrumb-item active" aria-current="page">{label}</li>',
                     'tag' => 'ol',
-                    'encodeLabels' => false
+                    'encodeLabels' => false,
+                    'homeLink' => [
+                        'label' => '<i class="fas fa-home"></i>',
+                        'url' => ['/site/index'],
+                        'encode' => false
+                    ]
                 ]) ?>
             </div>
         </div>
