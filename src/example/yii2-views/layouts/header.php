@@ -14,19 +14,22 @@ use yii\widgets\Breadcrumbs;
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <?php if (isset($this->blocks['content-header'])) { ?>
-                    <h1><?= $this->blocks['content-header']; ?></h1>
-                <?php } else { ?>
+                <?php if (isset($this->blocks['content-header'])): ?>
+                    <h1><?= $this->blocks['content-header'] ?></h1>
+                <?php else: ?>
                     <h1>
                         <?php
-                        if ($this->title !== null) {
+                        if ($this->title !== null):
                             echo Html::encode($this->title);
-                        } else {
+                        else:
                             echo Inflector::camel2words(Inflector::id2camel($this->context->module->id));
-                            echo ($this->context->module->id !== Yii::$app->id) ? '<small>Module</small>' : '';
-                        } ?>
+                            if ($this->context->module->id !== Yii::$app->id):
+                                echo '<small>Module</small>';
+                            endif;
+                        endif;
+                        ?>
                     </h1>
-                <?php } ?>
+                <?php endif; ?>
             </div>
 
             <div class="col-sm-6">
