@@ -30,13 +30,13 @@ use yii\widgets\Breadcrumbs;
             </div>
 
             <div class="col-sm-6">
-                <?= \yii\widgets\Breadcrumbs::widget([
+                <?= Breadcrumbs::widget([
                     'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                     'options' => [
                         'class' => 'breadcrumb float-sm-right'
                     ],
-                    'itemTemplate' => '<li class="breadcrumb-item"><a href="{url}">{label}</a></li>',
-                    'activeItemTemplate' => '<li class="breadcrumb-item active" aria-current="page">{label}</li>',
+                    'itemTemplate' => '<li class="breadcrumb-item"><a href="{url}">{link}</a></li>',
+                    'activeItemTemplate' => '<li class="breadcrumb-item active" aria-current="page">{link}</li>',
                     'tag' => 'ol',
                     'encodeLabels' => false,
                     'homeLink' => [
