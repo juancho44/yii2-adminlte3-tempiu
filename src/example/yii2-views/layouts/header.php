@@ -33,7 +33,7 @@ use yii\widgets\Breadcrumbs;
                 <?= \yii\widgets\Breadcrumbs::widget([
                     'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                     'options' => [
-                        'class' => 'float-sm-right'
+                        'class' => 'breadcrumb float-sm-right'
                     ],
                     'itemTemplate' => '<li class="breadcrumb-item"><a href="{url}">{label}</a></li>',
                     'activeItemTemplate' => '<li class="breadcrumb-item active" aria-current="page">{label}</li>',
