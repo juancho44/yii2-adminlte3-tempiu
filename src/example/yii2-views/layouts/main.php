@@ -15,6 +15,43 @@ FontAwesomeAsset::register($this);
 
 $this->registerCssFile('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
 
+// Forzar tema dark con CSS personalizado
+$this->registerCss("
+    body {
+        background-color: #343a40 !important;
+        color: #ffffff !important;
+    }
+    .wrapper {
+        background-color: #343a40 !important;
+    }
+    .main-header {
+        background-color: #212529 !important;
+        border-bottom: 1px solid #495057 !important;
+    }
+    .main-sidebar {
+        background-color: #212529 !important;
+    }
+    .sidebar-dark-primary {
+        background-color: #212529 !important;
+    }
+    .content-wrapper {
+        background-color: #343a40 !important;
+    }
+    .content-header {
+        background-color: #343a40 !important;
+    }
+    .breadcrumb {
+        background-color: #495057 !important;
+        color: #ffffff !important;
+    }
+    .breadcrumb-item a {
+        color: #17a2b8 !important;
+    }
+    .breadcrumb-item.active {
+        color: #ffffff !important;
+    }
+");
+
 $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
 ?>
 
@@ -29,7 +66,7 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed201
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="hold-transition skin-dark sidebar-mini">
+<body class="hold-transition sidebar-mini">
 <?php $this->beginBody() ?>
 
 <div class="wrapper">
