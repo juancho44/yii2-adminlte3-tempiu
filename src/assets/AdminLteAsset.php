@@ -12,6 +12,7 @@ class AdminLteAsset extends AssetBundle
 {
     public $css = [
         'https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css',
+        'https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/skins/skin-dark.min.css',
     ];
 
     public $js = [
