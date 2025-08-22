@@ -28,6 +28,33 @@ $this->registerCss("
         background-color: #212529 !important;
         border-bottom: 1px solid #495057 !important;
     }
+    /* Navbar específico */
+    .main-header .navbar {
+        background-color: #212529 !important;
+    }
+    .main-header .navbar-nav .nav-link {
+        color: #ffffff !important;
+    }
+    .main-header .navbar-nav .nav-link:hover {
+        color: #17a2b8 !important;
+    }
+    .main-header .navbar-brand {
+        color: #ffffff !important;
+    }
+    .main-header .navbar-brand:hover {
+        color: #17a2b8 !important;
+    }
+    .main-header .dropdown-menu {
+        background-color: #343a40 !important;
+        border-color: #495057 !important;
+    }
+    .main-header .dropdown-item {
+        color: #e9ecef !important;
+    }
+    .main-header .dropdown-item:hover {
+        background-color: #495057 !important;
+        color: #ffffff !important;
+    }
     .main-sidebar {
         background-color: #212529 !important;
     }
@@ -91,6 +118,39 @@ $this->registerCss("
     .btn-secondary {
         background-color: #6c757d !important;
         border-color: #6c757d !important;
+    }
+    /* Footer */
+    .main-footer {
+        background-color: #212529 !important;
+        border-top: 1px solid #495057 !important;
+        color: #e9ecef !important;
+    }
+    .main-footer a {
+        color: #17a2b8 !important;
+    }
+    .main-footer a:hover {
+        color: #ffffff !important;
+    }
+    .main-footer .float-right {
+        color: #e9ecef !important;
+    }
+    /* Sidebar específico */
+    .sidebar-dark-primary .nav-sidebar .nav-link {
+        color: #e9ecef !important;
+    }
+    .sidebar-dark-primary .nav-sidebar .nav-link:hover {
+        background-color: #495057 !important;
+        color: #ffffff !important;
+    }
+    .sidebar-dark-primary .nav-sidebar .nav-link.active {
+        background-color: #007bff !important;
+        color: #ffffff !important;
+    }
+    .sidebar-dark-primary .nav-sidebar .nav-treeview .nav-link {
+        color: #adb5bd !important;
+    }
+    .sidebar-dark-primary .nav-sidebar .nav-treeview .nav-link:hover {
+        color: #ffffff !important;
     }
 ");
 
