@@ -50,6 +50,48 @@ $this->registerCss("
     .breadcrumb-item.active {
         color: #ffffff !important;
     }
+    /* Texto del contenido principal */
+    .content {
+        color: #e9ecef !important;
+    }
+    .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+        color: #ffffff !important;
+    }
+    .content p, .content div, .content span {
+        color: #e9ecef !important;
+    }
+    /* Tablas */
+    .table {
+        color: #e9ecef !important;
+    }
+    .table th {
+        color: #ffffff !important;
+        background-color: #495057 !important;
+    }
+    .table td {
+        color: #e9ecef !important;
+        background-color: #343a40 !important;
+    }
+    /* Formularios */
+    .form-control {
+        background-color: #495057 !important;
+        border-color: #6c757d !important;
+        color: #ffffff !important;
+    }
+    .form-control:focus {
+        background-color: #495057 !important;
+        border-color: #17a2b8 !important;
+        color: #ffffff !important;
+    }
+    /* Botones */
+    .btn-primary {
+        background-color: #007bff !important;
+        border-color: #007bff !important;
+    }
+    .btn-secondary {
+        background-color: #6c757d !important;
+        border-color: #6c757d !important;
+    }
 ");
 
 $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
