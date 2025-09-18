@@ -16,7 +16,6 @@ class AdminLteAsset extends AssetBundle
     ];
 
     public $js = [
-        'https://code.jquery.com/jquery-3.6.0.min.js',
         'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js',
         'https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js'
     ];
